@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Chatbot</title>
+</head>
+
+<body>
+    <div class="heading">
+        <img class="logo" src="{{ url_for('static', filename='images/botlogo.png') }}" alt="Bot Logo">
+        <h3> Hi! I'm Bolt, a chatbot that learns from you.</h3>
+    </div>
+    <div class="container">
+        <form action="/" method="post">
+            <label for="question" class="question">Ask a question or start a conversation:</label><br>
+            <input type="text" class="textbox" id="question" name="question" value="{{ question }}" required><br>
+            <input type="submit" value="Submit">
+        </form>
+        <div class="response-box">
+            {% if answer %}
+                <p>Bot: {{ answer }}</p>
+            {% endif %}
+        </div>
+    </div>
+    {% if answer == "Sorry, I don't know the answer. Please provide a response or type 'skip' to skip the response." %}
+    <div class="container">
+        <form action="/new_answer" method="post">
+            <label for="new_answer"> <br> </label><br>
+            <input type="text" id="new_answer" name="new_answer" required><br>
+            <input type="hidden" name="question" value="{{ question }}">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    {% endif %}
+    <div class="copyright">
+        <h4> Copyright © Yevgenia Minchuk</h4>
+    </div>
+</body>
+
+<style>
+    body {
+        background-color: #ffffff;
+        font-family: Georgia;
+    }
+    h3 {
+        font-family: Georgia;
+        font-size: 20px;
+        border: 4px solid #1a1a1a;
+        border-right: #fff;
+        border-left: #fff;
+        font-weight: 800;
+        padding: 2em 2em;
+        font-weight: 500;
+    }
+    .heading {
+        text-align: center;
+        margin: 5em auto; 
+    }
+    .container {
+        align-items: center;
+        text-align: center;
+    }
+    .question {
+        font-family: Georgia;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .response-box {
+        font-size: 24px;
+        text-align: center;
+        align-items: center;
+        background-color: #fff;
+        border: 4px solid #1a1a1a;
+        margin: 0 auto;
+        border-radius: 2em;
+        margin-top: 4em;
+        padding: .5em 2em;
+        width: 50%;
+        height: 40%;
+    }
+    .textbox{
+        margin: 2em 0;
+    }
+    input[type="text"] {
+        padding: 15px;
+        font-size: 18px;
+        width: 100%;
+        max-width: 600px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    input[type="submit"] {
+        padding: 15px 30px;
+        font-size: 18px;
+        font-weight: 700;
+        border: 4px solid #1a1a1a;
+        border-radius: 2em;
+        box-shadow: #1a1a1a 4px 4px 0 0;
+        background-color: #c351f0;
+        color: #000;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+    input[type="submit"]:hover {
+        background-color: #fff;
+    }
+    input[type="submit"]:active {
+        box-shadow: #1a1a1a 2px 2px 0 0;
+        transform: translate(2px, 2px);
+    }
+    .logo{
+        height: 350px;
+        width: 500px;
+    }
+    .copyright {
+        text-align: center;
+        background-color: #1a1a1a;
+        color: #fff;
+        position: relative;
+        margin-top: 8em;
+        bottom: 0;
+        width: 100%;
+        padding: .5px 0;
+    }
+</style>
+</html>

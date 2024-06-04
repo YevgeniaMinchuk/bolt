@@ -1,0 +1,48 @@
+{
+  "questions": [
+    {
+      "question": "Hello",
+      "answer": "Hi!"
+    },
+    {
+      "question": "How are you?",
+      "answer": "I'm good, how are you?"
+    },
+    {
+      "question": "Hey",
+      "answer": "Hey!"
+    },
+    {
+      "question": "hi",
+      "answer": "Hi!"
+    },
+    {
+      "question": "Good! What is your name?",
+      "answer": "That is a secret, but what's your name?"
+    },
+    {
+      "question": "Bye",
+      "answer": "Goodbye!"
+    },
+    {
+      "question": "Bye",
+      "answer": "Goodbye!"
+    },
+    {
+      "question": "how is your day",
+      "answer": "It's been great, how was yours?"
+    },
+    {
+      "question": "how is your day",
+      "answer": "It's been great, how was yours?"
+    },
+    {
+      "question": "where is america",
+      "answer": "On Earth"
+    },
+    {
+      "question": "hey",
+      "answer": "Hey!"
+    }
+  ]
+}
