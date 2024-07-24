@@ -12,10 +12,10 @@ The chatbot can answer questions based on the provided knowledge and can learn n
 - [Contact](#contact)
 
 ## Features
-User Interaction: Users can ask questions and get answers based on the knowledge base.
-Knowledge Expansion: Users can teach the chatbot new responses if it doesn't know an answer.
-Simple Web Interface: The application has a user-friendly interface built with HTML and CSS.
-JSON Knowledge Base: The chatbot uses a JSON file to store questions and answers.
+- User Interaction: Users can ask questions and get answers based on the knowledge base
+- Knowledge Expansion: Users can teach the chatbot new responses if it doesn't know an answer
+- Simple Web Interface: The application has a user-friendly interface built with HTML and CSS
+- JSON Knowledge Base: The chatbot uses a JSON file to store questions and answers
 
 ## Getting Started
 ### Prerequisites
