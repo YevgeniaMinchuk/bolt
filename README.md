@@ -62,4 +62,5 @@ Left-click on the address shown in the terminal (usually http://127.0.0.1:5000/)
 
 ## Contact
 Yevgenia Minchuk - minchuky@msu.edu
-\nSee my portfolio - https://portfolio-yevgeniaminchuk.netlify.app
+
+See my portfolio - https://portfolio-yevgeniaminchuk.netlify.app
