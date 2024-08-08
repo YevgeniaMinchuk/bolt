@@ -51,6 +51,7 @@ Follow these steps to set up the project in VS Code or another coding platform:
 4. **Install Required Packages**
    
   pip install flask
+  
 5. **Set the FLASK_APP Environment Variable**
 
   Make sure that you are in the Bolt directory (cd Bolt)
