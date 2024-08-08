@@ -26,8 +26,11 @@ Install the following applications:
 ## Installation
 Follow these steps to set up the project in VS Code or another coding platform:
 1. **Clone the repository**
+
   git clone https://github.com/yourusername/chatbot.git
+  
   cd chatbot
+  
   **Alternatively, download the code as a ZIP file and open it in Visual Studio Code (VS Code)**
 3. **Set Up Environment in VS Code**
 - Open the project folder in VS Code.
@@ -36,13 +39,17 @@ Follow these steps to set up the project in VS Code or another coding platform:
 - After creating the virtual environment, run Terminal: Create New Terminal (Ctrl+Shift+ ``) from the Command Palette, which creates a terminal and automatically activates the virtual environment.
 3. **Activate the Virtual Environment**
   py -3 -m venv venv
+
   venv\Scripts\activate   # On Windows
+
   source venv/bin/activate # On macOS/Linux
 4. **Install Required Packages**
   pip install flask
 5. **Set the FLASK_APP Environment Variable**
   Make sure that you are in the Bolt directory (cd Bolt)
+
   set FLASK_APP=algo.py   # On Windows
+
   export FLASK_APP=algo.py # On macOS/Linux
 6. **Run the Flask Application**
   flask run
