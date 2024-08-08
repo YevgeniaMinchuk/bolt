@@ -32,7 +32,7 @@ Follow these steps to set up the project in VS Code or another coding platform:
   cd chatbot
   
   **Alternatively, download the code as a ZIP file and open it in Visual Studio Code (VS Code)**
-3. **Set Up Environment in VS Code**
+2. **Set Up Environment in VS Code**
 - Open the project folder in VS Code.
 - Open the Command Palette (View > Command Palette or Ctrl+Shift+P).
 - Select the Python: Create Environment command to create a virtual environment in your workspace. Choose venv and the Python environment you want to use. Select the "requirements.txt" file as a dependency.
